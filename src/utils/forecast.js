@@ -13,10 +13,9 @@ const forecast = (lat,lon,callback) =>{
             callback('Unable to find required location!',undefined)
         }
         else {
-            callback(undefined,body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degress temperature. There is ' + body.currently.precipProbability + '% change of rain.')
+            callback(undefined,body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degress temperature. The high today is ' + body.daily.data[0].temperatureHigh + ' with a low of '+ body.daily.data[0].temperatureLow +'. There is ' + body.currently.precipProbability + '% change of rain.')
         }
     })
 }
-
 
 module.exports = forecast
