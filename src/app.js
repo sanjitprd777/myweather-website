@@ -34,7 +34,7 @@ app.get('',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         title: 'About me',
-        name: 'Sanjit Pd'
+        name: 'Sanjit Prasad'
     })
 })
 
@@ -42,7 +42,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         message: 'Hi there how are you!',
         title: 'Help',
-        name: 'Sanjit Pd'
+        name: 'Sanjit Prasad'
     })
 })
 
